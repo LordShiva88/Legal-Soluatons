@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal-Solutions</title>
 
-</head>
-<body>
-    <h1>Hello Bangladesh!</h1>
-</body>
+    <!-- link into font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,500&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- tailwind link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'coffee':'#B68C5A',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .garamond{
+        font-family: 'EB Garamond', serif;
+    }
+    </style>
+  </head>
+  <body class="max-w-screen-xl mx-auto px-5 lg:px-0">
+    <header>
+        <!-- nav section -->
+        <div class="navbar bg-base-100">
+            <div class="flex">
+                <div><h2 class="text-3xl font-bold garamond">Justice</h2></div>
+                <img src="./images/logo.png" alt="">
+                
+            </div>
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <div class="navbar-center hidden lg:flex">
+                <ul tabindex="0" class="flex gap-8">
+                  <li><a>Home</a></li>
+                  <li><a>Services<i class="fa-solid fa-chevron-right ml-3"></i></a></li>
+                  <li><a>Cases<i class="fa-solid fa-chevron-right ml-3"></i></a></li>
+                  <li><a>Blog<i class="fa-solid fa-chevron-right ml-3"></i></a></li>
+                  <li><a>Contact Us<i class="fa-solid fa-chevron-right ml-3"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-coffee">Free Consultation</a>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <div class="hero py-20 bg-opacity-60" style="background-image: url('./images/banner.png');">
+            <div class="hero-overlay "></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-5xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                <p class="mb-5 max-w-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <input type="search" placeholder="Search your services" class="outline-none p-3 rounded-lg w-auto lg:w-96">
+                <button class="btn bg-coffee">search</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <!-- Practice section -->
+        <section>
+            <h2 class="text-4xl garamond font-extrabold">The Legal Practice Area</h2>
+            <p class="poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
